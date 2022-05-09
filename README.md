@@ -45,11 +45,11 @@ Docker container for launching GeoScan simulator.
 
 Для симмулятора с визуализацией:
 
-`docker run -p 57891:8000 -v <путь до папки cache>:/usr/src/app/cache --env DISPLAY=<Ваш IP-адрес>:0.0 --name testsim --rm testsim`
+`docker run -p 57891:8000 -v <путь до папки cache>:/usr/src/app/cache --env DISPLAY=<Ваш IP-адрес>:0.0 --name testsim --rm -it testsim`
 
 Для симмулятора без визуализации:
 
-`docker run -p 57891:8000 -v <путь до папки cache>:/usr/src/app/cache --name sim --rm sim ./start.sh`
+`docker run -p 57891:8000 -v <путь до папки cache>:/usr/src/app/cache --name sim --rm -it sim ./start.sh`
 
 ### PS
 При запуске симмулятора с визуализацией нужно выбрать подключение по UDP.
